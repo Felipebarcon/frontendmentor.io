@@ -44,6 +44,20 @@ svg {
     opacity: 0.4;
 }
 
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F9FE;
+  border-radius: 12px;
+  height: 100px;
+  width: 300px;
+}
+
+#music {
+  height: 50px;
+}
+
 .attribution {
   position: absolute;
   bottom: 0;
