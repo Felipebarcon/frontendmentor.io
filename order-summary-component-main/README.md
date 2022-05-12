@@ -21,6 +21,3 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - Linkedin - [Felipe Barcon](https://www.linkedin.com/in/felipe-barcon/)
 - Frontend Mentor - [Felipebarcon](https://www.frontendmentor.io/profile/Felipebarcon)
-
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
