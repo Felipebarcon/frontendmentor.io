@@ -1,16 +1,24 @@
 html,
 body {
   background-image: url('images/pattern-background-desktop.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-color: #DFE8FF;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  margin-top: -100px;
+  /* half of you height */
+  width: 400px;
+  margin-left: -200px
+  /* half of you width */
 }
 
 .card {
@@ -28,7 +36,7 @@ svg {
 
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: 480px;
@@ -36,6 +44,8 @@ svg {
 
 .title {
   font-size: 1.2rem;
+  margin: 0;
+  height: 60px;
 }
 
 .description {
@@ -44,22 +54,65 @@ svg {
     opacity: 0.4;
 }
 
+.description p {
+  margin: 0;
+}
+
 .plan {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #F8F9FE;
   border-radius: 12px;
-  height: 100px;
+  height: 80px;
   width: 300px;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.annual-plan p {
+  margin: 2px;
 }
 
 #music {
   height: 50px;
 }
 
+.italic {
+  font-style: italic;
+  opacity: 0.5;
+  padding-top: 0.3em;
+}
+
 .attribution {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 2rem;
+  padding-top: 2em;
+  text-align-last: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+.payment  {
+  text-align: center;
+  background-color: #382AE1 ;
+  border-radius: 12px;
+  width: 300px;
+  color: white;
+  font-weight: bolder;
+}
+
+.cancel {
+  font-weight: bolder;
+  opacity: 0.5;
+}
+
+#change {
+  font-size: small;
 }
