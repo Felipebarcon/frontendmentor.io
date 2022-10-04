@@ -1,5 +1,7 @@
 "use strict";
 
+// DATA
+
 const daily = document.querySelector(".daily");
 const weekly = document.querySelector(".weekly");
 const monthly = document.querySelector(".monthly");
@@ -21,10 +23,31 @@ const contentLastMonth = document.querySelectorAll(
 
 const activeTime = "time-period-active";
 
+// FUNCTIONS
+
+const init = function () {
+  contentDay.forEach((c) => c.classList.add("hidden"));
+  contentLastDay.forEach((c) => c.classList.add("hidden"));
+  contentWeek.forEach((c) => c.classList.add("hidden"));
+  contentLastWeek.forEach((c) => c.classList.add("hidden"));
+  contentMonth.forEach((c) => c.classList.add("hidden"));
+  contentLastMonth.forEach((c) => c.classList.add("hidden"));
+};
+
+const initDaily = function () {
+  contentDay.forEach((c) => c.classList.remove("hidden"));
+  contentLastDay.forEach((c) => c.classList.remove("hidden"));
+};
+
 daily.addEventListener("click", function () {
   weekly.classList.remove(activeTime);
   monthly.classList.remove(activeTime);
   daily.classList.add(activeTime);
+
+  init();
+
+  contentDay.forEach((c) => c.classList.remove("hidden"));
+  contentLastDay.forEach((c) => c.classList.remove("hidden"));
 });
 
 weekly.addEventListener("click", function () {
@@ -32,10 +55,7 @@ weekly.addEventListener("click", function () {
   monthly.classList.remove(activeTime);
   weekly.classList.add(activeTime);
 
-  contentDay.forEach((c) => c.classList.add("hidden"));
-  contentLastDay.forEach((c) => c.classList.add("hidden"));
-  contentMonth.forEach((c) => c.classList.add("hidden"));
-  contentLastMonth.forEach((c) => c.classList.add("hidden"));
+  init();
 
   contentWeek.forEach((c) => c.classList.remove("hidden"));
   contentLastWeek.forEach((c) => c.classList.remove("hidden"));
@@ -45,4 +65,12 @@ monthly.addEventListener("click", function () {
   weekly.classList.remove(activeTime);
   daily.classList.remove(activeTime);
   monthly.classList.add(activeTime);
+
+  init();
+
+  contentMonth.forEach((c) => c.classList.remove("hidden"));
+  contentLastMonth.forEach((c) => c.classList.remove("hidden"));
 });
+
+init();
+initDaily();

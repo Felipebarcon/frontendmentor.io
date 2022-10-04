@@ -187,6 +187,7 @@ main {
 .card--content--duration {
   font-size: 5.6rem;
   font-weight: 200;
+  margin-bottom: 1.6rem;
 }
 
 .card--content--last--duration {
@@ -254,8 +255,4 @@ footer {
 
 .time-period-active {
   color: white;
-}
-
-.margin-botom {
-  margin-bottom: 1.6rem;
 }
