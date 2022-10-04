@@ -86,10 +86,7 @@ main {
 
 /* CARDS */
 
-.cards {
-  height: 24.4rem;
-  width: 25.5rem;
-}
+/* MAIN CARD */
 
 .card--person {
   height: 51.8rem;
@@ -149,6 +146,74 @@ main {
   cursor: pointer;
 }
 
+/* ACTIVITY CARD */
+
+.card--activity {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 24.4rem;
+  width: 25.5rem;
+  background-color: #fb9d7d;
+  border-radius: 15px;
+}
+
+.card--icon {
+  height: 4.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.4rem;
+}
+
+.card--icon img {
+  height: 7.8rem;
+  width: 7.8rem;
+}
+
+.card--activity--content {
+  background-color: #1c204b;
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2.4rem;
+}
+
+.card--content--activity {
+  font-size: 1.8rem;
+}
+
+.card--content--day--duration {
+  font-size: 5.6rem;
+  font-weight: 200;
+}
+
+.card--content--lastday--duration {
+  font-size: 1.5rem;
+  color: #bbc0ff;
+}
+
+.card--play {
+  background-color: #55c2e6;
+}
+
+.card--study {
+  background-color: #ff5e7d;
+}
+
+.card--exercise {
+  background-color: #4bcf82;
+}
+
+.card--social {
+  background-color: #7335d2;
+}
+
+.card--self-care {
+  background-color: #f1c75b;
+}
+
 /* FOOTER */
 
 footer {
@@ -168,6 +233,10 @@ footer {
 
 /*  UTILITY CLASSES */
 
+.hidden {
+  display: none;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -185,4 +254,8 @@ footer {
 
 .time-period-active {
   color: white;
+}
+
+.margin-botom {
+  margin-bottom: 1.6rem;
 }

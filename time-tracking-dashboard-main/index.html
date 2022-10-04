@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
@@ -39,103 +40,173 @@
             </div>
             <div class="card--person--time">
               <ul class="card--detail--time-period">
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
+                <li class="daily time-period-active">Daily</li>
+                <li class="weekly">Weekly</li>
+                <li class="monthly">Monthly</li>
               </ul>
             </div>
           </div>
-          <div class="cards card--work">
-            <p>Work</p>
-            <p>5hrs</p>
-            <!-- daily -->
-            <p>Last Day - 7hrs</p>
-            <!-- daily -->
-            <p>32hrs</p>
-            <!-- weekly -->
-            <p>Last Week - 36hrs</p>
-            <!-- weekly -->
-            <p>103hrs</p>
-            <!-- monthly -->
-            <p>Last Month - 128hrs</p>
-            <!-- monthly -->
-          </div>
-          <div class="cards card--play">
-            <p>Play</p>
-            <p>1hr</p>
-            <!-- daily -->
-            <p>Last Day - 2hrs</p>
-            <!-- daily -->
-            <p>10hrs</p>
-            <!-- weekly -->
-            <p>Last Week- 8hrs</p>
-            <!-- weekly -->
-            <p>23hrs</p>
-            <!-- monthly -->
-            <p>Last Month- 29hrs</p>
-            <!-- monthly -->
-          </div>
-          <div class="cards card--study">
-            <p>Study</p>
-            <p>0hrs</p>
-            <!-- daily -->
-            <p>Last Day - 1hr</p>
-            <!-- daily -->
-            <p>4hrs</p>
-            <!-- weekly -->
-            <p>Last Week- 7hrs</p>
-            <!-- weekly -->
-            <p>13hrs</p>
-            <!-- monthly -->
-            <p>Last Month- 19hrs</p>
-            <!-- monthly -->
-          </div>
-          <div class="cards card--exercise">
-            <p>Exercise</p>
-            <p>1hr</p>
-            <!-- daily -->
-            <p>Last Day - 1hr</p>
-            <!-- daily -->
-            <p>4hrs</p>
-            <!-- weekly -->
-            <p>Last Week- 5hrs</p>
-            <!-- weekly -->
-            <p>11hrs</p>
-            <!-- monthly -->
-            <p>Last Month- 18hrs</p>
-            <!-- monthly -->
+
+          <div class="card--activity card--work">
+            <div class="card--icon">
+              <img src="images/icon-work.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Work</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">5hrs</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 7hrs</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">32hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week - 36hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">103hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month - 128hrs
+              </p>
+              <!-- monthly -->
+            </div>
           </div>
 
-          <div class="cards card--social">
-            <p>Social</p>
-            <p>1hr</p>
-            <!-- daily -->
-            <p>Last Day - 3hrs</p>
-            <!-- daily -->
-            <p>5hrs</p>
-            <!-- weekly -->
-            <p>Last Week- 10hrs</p>
-            <!-- weekly -->
-            <p>21hrs</p>
-            <!-- monthly -->
-            <p>Last Month- 23hrs</p>
-            <!-- monthly -->
+          <div class="card--activity card--play">
+            <div class="card--icon">
+              <img src="images/icon-play.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Play</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">1hr</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 2hrs</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">10hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week- 8hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">23hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month- 29hrs
+              </p>
+              <!-- monthly -->
+            </div>
           </div>
 
-          <div class="cards card--self-car">
-            <p>Self Care</p>
-            <p>0hrs</p>
-            <!-- daily -->
-            <p>Last Day- 1hr</p>
-            <!-- daily -->
-            <p>2hrs</p>
-            <!-- weekly -->
-            <p>Last Week- 2hrs</p>
-            <!-- weekly -->
-            <p>7hrs</p>
-            <!-- monthly -->
-            <p>Last Month- 11hrs</p>
-            <!-- monthly -->
+          <div class="card--activity card--study">
+            <div class="card--icon">
+              <img src="images/icon-study.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Study</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">0hrs</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 1hr</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">4hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week- 7hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">13hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month- 19hrs
+              </p>
+              <!-- monthly -->
+            </div>
+          </div>
+
+          <div class="card--activity card--exercise">
+            <div class="card--icon">
+              <img src="images/icon-exercise.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Exercise</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">1hr</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 1hr</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">4hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week- 5hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">11hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month- 18hrs
+              </p>
+              <!-- monthly -->
+            </div>
+          </div>
+
+          <div class="card--activity card--social">
+            <div class="card--icon">
+              <img src="images/icon-social.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Social</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">1hr</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 3hr</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">5hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week- 10hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">21hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month- 23hrs
+              </p>
+              <!-- monthly -->
+            </div>
+          </div>
+
+          <div class="card--activity card--self-care">
+            <div class="card--icon">
+              <img src="images/icon-self-care.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <p class="card--content--activity">Self Care</p>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration margin-botom">0hr</p>
+                <!-- daily -->
+                <p class="card--content--lastday--duration">Last Day - 1hr</p>
+                <!-- daily -->
+              </div>
+              <p class="card--content--week--duration hidden">2hrs</p>
+              <!-- weekly -->
+              <p class="card--content--lastweek--duration hidden">
+                Last Week- 2hrs
+              </p>
+              <!-- weekly -->
+              <p class="card--content--month--duration hidden">7hrs</p>
+              <!-- monthly -->
+              <p class="card--content--lastmonth--duration hidden">
+                Last Month- 11hrs
+              </p>
+              <!-- monthly -->
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +217,8 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by
+          <a href="https://github.com/Felipebarcon">Felipe Barcon</a>.
         </div>
       </footer>
     </main>
