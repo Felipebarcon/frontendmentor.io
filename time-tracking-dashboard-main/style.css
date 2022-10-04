@@ -184,12 +184,12 @@ main {
   font-size: 1.8rem;
 }
 
-.card--content--day--duration {
+.card--content--duration {
   font-size: 5.6rem;
   font-weight: 200;
 }
 
-.card--content--lastday--duration {
+.card--content--last--duration {
   font-size: 1.5rem;
   color: #bbc0ff;
 }
