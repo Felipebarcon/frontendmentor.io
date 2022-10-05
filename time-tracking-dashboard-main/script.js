@@ -21,6 +21,8 @@ const contentLastMonth = document.querySelectorAll(
   ".card--content--lastmonth--duration"
 );
 
+// Variables
+
 const activeTime = "time-period-active";
 
 // FUNCTIONS
@@ -39,9 +41,20 @@ const initDaily = function () {
   contentLastDay.forEach((c) => c.classList.remove("hidden"));
 };
 
-daily.addEventListener("click", function () {
+const initActiveTime = function () {
+  daily.classList.remove(activeTime);
   weekly.classList.remove(activeTime);
   monthly.classList.remove(activeTime);
+};
+
+const activateDailyActiveTime = function () {
+  daily.classList.add(activeTime);
+};
+
+// EVENTS
+
+daily.addEventListener("click", function () {
+  initActiveTime();
   daily.classList.add(activeTime);
 
   init();
@@ -51,8 +64,7 @@ daily.addEventListener("click", function () {
 });
 
 weekly.addEventListener("click", function () {
-  daily.classList.remove(activeTime);
-  monthly.classList.remove(activeTime);
+  initActiveTime();
   weekly.classList.add(activeTime);
 
   init();
@@ -62,8 +74,7 @@ weekly.addEventListener("click", function () {
 });
 
 monthly.addEventListener("click", function () {
-  weekly.classList.remove(activeTime);
-  daily.classList.remove(activeTime);
+  initActiveTime();
   monthly.classList.add(activeTime);
 
   init();
@@ -74,3 +85,5 @@ monthly.addEventListener("click", function () {
 
 init();
 initDaily();
+initActiveTime();
+activateDailyActiveTime();
