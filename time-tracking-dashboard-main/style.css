@@ -288,27 +288,25 @@ footer {
 
 /* MEDIA QUERRIES MOBILE */
 
-@media (max-width: 34em) {
+@media (max-width: 34rem) {
   main {
-    height: 92em;
+    height: 160rem;
     width: 100vw;
   }
 
   .container {
-    height: 92em;
-    width: 24em;
+    height: 100%;
+    width: 100%;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 3em;
+    gap: 3rem;
   }
 
   .card--person {
-    display: flex;
-    flex-direction: column;
-    height: 12.7rem;
-    min-width: 20rem;
+    height: 18rem;
+    width: 36rem;
   }
 
   .card--person--avatar {
@@ -321,12 +319,12 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 8.3em;
+    height: 8.3rem;
     padding-left: 1.2rem;
   }
 
   .card--content--data {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
   }
 
   .card--content--report {
@@ -358,14 +356,23 @@ footer {
     font-size: 1em;
   }
 
-  .card--content--day--duration {
-    font-size: 2em;
-    grid-row: -2 / -1;
-  }
-
   .card--activity--duration {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card--content--duration {
+    font-size: 2em;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+    font-size: 1.3rem;
   }
 }
