@@ -179,6 +179,10 @@ main {
   padding-right: 2.4rem;
 }
 
+.card--dots:hover .dots {
+  background-color: white;
+}
+
 .card--activity--content {
   background-color: #1c204b;
   border-radius: 1.5rem;
@@ -187,6 +191,10 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 2.4rem;
+}
+
+.card--activity--content:hover {
+  background-color: #33397a;
 }
 
 .card--content--activity {
