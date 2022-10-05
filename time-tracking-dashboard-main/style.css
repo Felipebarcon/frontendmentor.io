@@ -93,8 +93,7 @@ main {
   width: 25.5rem;
   grid-row: 1 / -1;
   background-color: #1c204b;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .card--person--avatar {
@@ -155,9 +154,7 @@ main {
   height: 24.4rem;
   width: 25.5rem;
   background-color: #fb9d7d;
-  border-radius: 1.5rem;
-  border-bottom-right-radius: 1.7rem;
-  border-bottom-left-radius: 1.7rem;
+  border-radius: 1.5rem 1.5rem 1.7rem 1.7rem;
 }
 
 .card--icon {
@@ -190,7 +187,6 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 2.4rem;
-  z-index: 1;
 }
 
 .card--content--activity {
