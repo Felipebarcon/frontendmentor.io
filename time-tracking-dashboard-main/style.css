@@ -352,14 +352,20 @@ footer {
     width: 20em;
   }
 
+  .card--activity--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .card--content--activity {
     font-size: 1em;
   }
 
   .card--activity--duration {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.4rem;
   }
 
   .card--content--duration {
