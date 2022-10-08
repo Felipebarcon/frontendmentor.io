@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="container center">
+        <div class="grid">
+          <div class="card--person">
+            <div class="card--person--report">
+              <img
+                src="images/image-jeremy.png"
+                alt="Avatar picture from Jeremy"
+                class="card--person--avatar circleborder"
+              />
+              <div class="card--content--data">
+                <p class="card--content--report">Report for</p>
+                <p class="card--content--name">Jeremy Robson</p>
+              </div>
+            </div>
+            <div class="card--person--time">
+              <ul class="card--detail--time-period">
+                <li class="daily time-period-active">Daily</li>
+                <li class="weekly">Weekly</li>
+                <li class="monthly">Monthly</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card--activity card--work">
+            <div class="card--icon">
+              <img src="images/icon-work.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Work</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration card--content--duration">
+                  5hrs
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 7hrs
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  32hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week - 36hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  103hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month - 128hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card--activity card--play">
+            <div class="card--icon">
+              <img src="images/icon-play.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Play</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration card--content--duration">
+                  1hr
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 2hrs
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  10hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week- 8hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  23hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month- 29hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card--activity card--study">
+            <div class="card--icon">
+              <img src="images/icon-study.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Study</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration card--content--duration">
+                  0hrs
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 1hr
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  4hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week- 7hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  13hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month- 19hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card--activity card--exercise">
+            <div class="card--icon">
+              <img src="images/icon-exercise.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Exercise</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration card--content--duration">
+                  1hr
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 1hr
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  4hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week- 5hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  11hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month- 18hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card--activity card--social">
+            <div class="card--icon">
+              <img src="images/icon-social.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Social</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p class="card--content--day--duration card--content--duration">
+                  1hr
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 3hr
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  5hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week- 10hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  21hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month- 23hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card--activity card--self-care">
+            <div class="card--icon">
+              <img src="images/icon-self-care.svg" alt="" />
+            </div>
+            <div class="card--activity--content">
+              <div class="card--activity--header">
+                <p class="card--content--activity">Self Care</p>
+                <div class="card--dots">
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                  <div class="dots"></div>
+                </div>
+              </div>
+              <div class="card--activity--duration">
+                <p
+                  class="card--content--day--duration card--content--duration margin-botom"
+                >
+                  0hr
+                </p>
+                <!-- daily -->
+                <p
+                  class="card--content--lastday--duration card--content--last--duration"
+                >
+                  Last Day - 1hr
+                </p>
+                <!-- daily -->
+
+                <p
+                  class="card--content--week--duration card--content--duration"
+                >
+                  2hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--lastweek--duration card--content--last--duration"
+                >
+                  Last Week- 2hrs
+                </p>
+                <!-- weekly -->
+                <p
+                  class="card--content--month--duration card--content--duration"
+                >
+                  7hrs
+                </p>
+                <!-- monthly -->
+                <p
+                  class="card--content--lastmonth--duration card--content--last--duration"
+                >
+                  Last Month- 11hrs
+                </p>
+                <!-- monthly -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/Felipebarcon">Felipe Barcon</a>.
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
