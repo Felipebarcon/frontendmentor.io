@@ -71,7 +71,6 @@ body {
   display: flex;
   height: 41.6rem;
   width: 41.2rem;
-  border: red solid 1px;
 }
 
 /* COMPONENT */
@@ -83,13 +82,20 @@ body {
   width: 100%;
   border: red solid 1px;
 }
-.component--top {
+.component--star {
 }
+
+.icon-star {
+}
+
 .component--title {
 }
+
 .component--paragraph {
 }
+
 .component--rating {
 }
+
 .component--btn {
 }
