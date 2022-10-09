@@ -57,6 +57,14 @@ body {
 }
 
 .container {
-  height: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--component {
+  height: 41.6rem;
+  width: 41.2rem;
   border: red solid 1px;
 }
