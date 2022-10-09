@@ -32,6 +32,8 @@ Medium:
 
 */
 
+/* RESET CSS */
+
 * {
   padding: 0;
   margin: 0;
@@ -56,6 +58,8 @@ body {
   overflow-x: hidden;
 }
 
+/* GENERAL */
+
 .container {
   height: 100vh;
   display: flex;
@@ -64,7 +68,28 @@ body {
 }
 
 .card--component {
+  display: flex;
   height: 41.6rem;
   width: 41.2rem;
   border: red solid 1px;
+}
+
+/* COMPONENT */
+
+.component--content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: red solid 1px;
+}
+.component--top {
+}
+.component--title {
+}
+.component--paragraph {
+}
+.component--rating {
+}
+.component--btn {
 }
