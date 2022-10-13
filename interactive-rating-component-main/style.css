@@ -7,6 +7,7 @@ FONT SIZE SYSTEM (px)
 --- 02 COLORS ---
 
 - Primary:
+
  - Orange: hsl(25, 97%, 53%)
  - White: hsl(0, 0%, 100%)
  - Light Grey: hsl(217, 12%, 63%)
@@ -53,9 +54,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-
-  /* Only works if there is nothing absolutely positioned in relation to body */
-  overflow-x: hidden;
+  background-color: hsl(216, 12%, 8%);
 }
 
 /* GENERAL */
@@ -71,6 +70,7 @@ body {
   display: flex;
   height: 41.6rem;
   width: 41.2rem;
+  background-color: hsl(213, 19%, 18%);
 }
 
 /* COMPONENT */
@@ -78,6 +78,8 @@ body {
 .component--content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   height: 100%;
   width: 100%;
 }
@@ -94,13 +96,24 @@ body {
 }
 
 .component--title {
+  color: white;
+  font-size: 2.8rem;
 }
 
 .component--paragraph {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .component--rating {
+  color: hsl(216, 12%, 54%);
 }
 
-.component--btn {
+.component--btn button {
+  background-color: hsl(25, 97%, 53%);
+  display: inline-block;
+  border: none;
+  border-radius: 15px;
+  color: white;
 }
