@@ -1,13 +1,31 @@
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import {
+  Directive,
+  HostBinding,
+  HostListener,
+  Input,
+  OnChanges,
+} from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]',
 })
 export class HighlightDirective {
-  constructor(private el: ElementRef) {}
+  @Input() public appHighlight: boolean = false;
+  @HostBinding('style.color') private color: string;
+  @HostBinding('style.backgroundColor') private backgroundColor: string;
 
-  @HostListener('click', ['$event']) OnClick(e: MouseEvent) {
-    console.log(e.target);
-    this.el.nativeElement.child.class.add('component--rating-active');
+  constructor() {}
+
+  @HostListener('click', ['$event'])
+  onClick() {
+    if (!this.appHighlight) {
+      this.backgroundColor = 'hsl(25, 97%, 53%)';
+      this.color = 'white';
+      this.appHighlight = true;
+    } else {
+      this.backgroundColor = 'hsl(213, 19%, 18%)';
+      this.color = 'hsl(216, 12%, 54%)';
+      this.appHighlight = false;
+    }
   }
 }
