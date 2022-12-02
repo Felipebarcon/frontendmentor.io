@@ -39,3 +39,13 @@ body {
   background-color: hsl(216, 12%, 8%);
   border-radius: 30px;
 }
+
+/* DEBUG */
+
+.d1 {
+  border: 1px solid red;
+}
+
+.d2 {
+  border: 1px solid green;
+}

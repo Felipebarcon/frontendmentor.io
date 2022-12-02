@@ -1,20 +1,21 @@
 import {
   Directive,
+  ElementRef,
   HostBinding,
   HostListener,
   Input,
-  OnChanges,
+  OnInit,
 } from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]',
 })
 export class HighlightDirective {
-  @Input() public appHighlight: boolean = false;
+  @Input() public appHighlight: boolean;
   @HostBinding('style.color') private color: string;
   @HostBinding('style.backgroundColor') private backgroundColor: string;
 
-  constructor() {}
+  constructor(public el: ElementRef) {}
 
   @HostListener('click', ['$event'])
   onClick() {

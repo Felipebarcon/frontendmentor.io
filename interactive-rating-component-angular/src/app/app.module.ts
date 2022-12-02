@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RatingComponent } from './rating/rating.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { ValidationComponent } from './validation/validation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RatingComponent,
-    HighlightDirective
+    HighlightDirective,
+    ValidationComponent
   ],
   imports: [
     BrowserModule
