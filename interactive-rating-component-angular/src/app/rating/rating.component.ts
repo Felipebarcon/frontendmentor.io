@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rating',
@@ -6,7 +7,12 @@ import { Component, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./rating.component.css'],
 })
 export class RatingComponent implements OnInit {
-  constructor() {}
+  public ratingStar: string[] = ['1', '2', '3', '4', '5'];
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  goToThankYouMessage(): void {
+    this.router.navigate(['/validation']);
+  }
 }

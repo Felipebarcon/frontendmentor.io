@@ -60,13 +60,10 @@
 .component--rating p:hover {
   background-color: hsl(216, 12%, 54%);
   color: white;
+  transition: all 0.4s;
 }
 
-.component--rating--num-1,
-.component--rating--num-2,
-.component--rating--num-3,
-.component--rating--num-4,
-.component--rating--num-5 {
+.component--rating--num {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +90,7 @@
 .component--btn button:hover {
   background-color: white;
   color: hsl(25, 97%, 53%);
+  transition: all 0.5s;
 }
 
 /* UTILITY CLASSES */
