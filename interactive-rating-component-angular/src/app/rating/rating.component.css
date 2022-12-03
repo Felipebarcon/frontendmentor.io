@@ -50,14 +50,14 @@
   margin-bottom: 2.4rem;
 }
 
-.component--rating p {
+.component--rating div {
   background-color: hsl(213, 19%, 18%);
   height: 5.1rem;
   width: 5.1rem;
   border-radius: 50%;
 }
 
-.component--rating p:hover {
+.component--rating div:hover {
   background-color: hsl(216, 12%, 54%);
   color: white;
   transition: all 0.4s;

@@ -18,7 +18,11 @@
         </p>
       </div>
       <div class="component--rating">
-        <p class="component--rating--num" *ngFor="let r of ratingStar"> {{r}} </p>
+        <div class="component--rating--num" [appHighlight]="false"
+             *ngFor="let r
+         of ratingStar">
+       {{r}}
+        </div>
       </div>
       <div class="component--btn">
         <button type="submit" (click)="goToThankYouMessage()">Submit</button>
