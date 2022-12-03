@@ -14,24 +14,16 @@ import { Event } from '@angular/router';
 })
 export class HighlightDirective {
   @Input() public appHighlight: boolean;
+
   @HostBinding('style.color') private color: string;
   @HostBinding('style.backgroundColor') private backgroundColor: string;
 
-  constructor(public el: ElementRef) {}
+  constructor(public el: ElementRef) {
+    console.log(this.el.nativeElement.node);
+  }
 
   @HostListener('click', ['$event'])
-  onClick() {
-    let clicked: number = 0;
-    if (!this.appHighlight && clicked <= 1) {
-      this.backgroundColor = 'hsl(25, 97%, 53%)';
-      this.color = 'white';
-      this.appHighlight = true;
-      clicked++;
-      console.log(clicked);
-    } else {
-      this.backgroundColor = 'hsl(213, 19%, 18%)';
-      this.color = 'hsl(216, 12%, 54%)';
-      this.appHighlight = false;
-    }
+  onClick(event: MouseEvent) {
+    console.log(event.target);
   }
 }

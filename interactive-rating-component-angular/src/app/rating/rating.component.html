@@ -18,14 +18,52 @@
         </p>
       </div>
       <div class="component--rating">
-        <div class="component--rating--num" [appHighlight]="false"
-             *ngFor="let r
-         of ratingStar">
-       {{r}}
+        <div class="component--rating--num">
+          <input
+            type="radio"
+            name="num"
+            id="1"
+            value="1"
+            (change)="onChange($event)"
+          >
+          <label for="1">1</label>
+          <input
+            type="radio"
+            name="num"
+            id="2"
+            value="2"
+            (change)="onChange($event)"
+          >
+          <label for="2">2</label>
+          <input
+            type="radio"
+            name="num"
+            id="3"
+            value="3"
+            (change)="onChange($event)"
+          >
+          <label for="3">3</label>
+          <input
+            type="radio"
+            name="num"
+            id="4"
+            value="4"
+            (change)="onChange($event)"
+          >
+          <label for="4">4</label>
+          <input
+            type="radio"
+            name="num"
+            id="5"
+            value="5"
+            (change)="onChange($event)"
+          >
+          <label for="5">5</label>
         </div>
       </div>
       <div class="component--btn">
-        <button type="submit" (click)="goToThankYouMessage()">Submit</button>
+        <button type="submit" (click)="goToThankYouMessage()">Submit
+        </button>
       </div>
     </div>
   </div>

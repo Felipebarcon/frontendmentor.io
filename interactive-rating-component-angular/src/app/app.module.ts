@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 
 // Routes
 import { APP_ROUTES } from './app.routes';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { APP_ROUTES } from './app.routes';
     HighlightDirective,
     ValidationComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
+  imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

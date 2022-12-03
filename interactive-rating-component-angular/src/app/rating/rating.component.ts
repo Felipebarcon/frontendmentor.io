@@ -1,18 +1,34 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-rating',
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.css'],
 })
-export class RatingComponent implements OnInit {
-  public ratingStar: string[] = ['1', '2', '3', '4', '5'];
-  constructor(private router: Router) {}
+export class RatingComponent implements OnInit, OnDestroy {
+  public message: string;
+  subscription: Subscription;
 
-  ngOnInit(): void {}
+  constructor(private router: Router, private data: DataService) {}
+
+  onChange(e: any) {
+    this.data.changeMessage(e.target.value);
+  }
 
   goToThankYouMessage(): void {
     this.router.navigate(['/validation']);
+  }
+
+  ngOnInit() {
+    this.subscription = this.data.currentMessage.subscribe(
+      (message) => (this.message = message)
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

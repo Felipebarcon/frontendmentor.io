@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" (click)="redirectToMain()">
   <div class="card--component">
     <div class="card--validation--content">
       <div class="card--validation--img">
@@ -9,7 +9,7 @@
         >
       </div>
       <div class="card--validation--selection">
-        <p>Yous selected 4 of 5 stars</p>
+        <p>You selected {{message}} of 5 stars</p>
       </div>
       <div class="card--validation--message">
         <h3>Thank you !</h3>
