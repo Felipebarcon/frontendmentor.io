@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca2972cb-f757-4dc5-a557-f8494e9d5d6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../interactive-rating-component-angular/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/README-template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/netlify.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/data.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/directives/highlight.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/rating/rating.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/rating/rating.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/rating/rating.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/validation/validation.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/validation/validation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/app/validation/validation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/assets/images/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/assets/images/icon-star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/assets/images/illustration-thank-you.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/style-guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interactive-rating-component-angular/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/interactive-rating-component-main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/active-states.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/desktop-design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/desktop-preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/desktop-thank-you-state.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/mobile-design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/mobile-thank-you-state.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2FlNd0GyFdXNDqzzzZnocMXt9mk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/felipebarcon/code/Felipebarcon/frontendmentor.io/interactive-rating-component-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/felipebarcon/.nvm/versions/node/v14.15.5/lib/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca2972cb-f757-4dc5-a557-f8494e9d5d6e" name="Changes" comment="" />
+      <created>1665062793114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665062793114</updated>
+      <workItem from="1665062795242" duration="1136000" />
+      <workItem from="1665125072136" duration="234000" />
+      <workItem from="1665243781083" duration="845000" />
+      <workItem from="1665313032416" duration="24000" />
+      <workItem from="1665581476955" duration="91000" />
+      <workItem from="1665585434102" duration="348000" />
+      <workItem from="1665585822105" duration="284000" />
+      <workItem from="1665666430361" duration="3412000" />
+      <workItem from="1665738561786" duration="96000" />
+      <workItem from="1665738669156" duration="18000" />
+      <workItem from="1665738696048" duration="661000" />
+      <workItem from="1665988590134" duration="10000" />
+      <workItem from="1666109391380" duration="1338000" />
+      <workItem from="1666164199786" duration="76000" />
+      <workItem from="1669846445106" duration="7400000" />
+      <workItem from="1669876802529" duration="1901000" />
+      <workItem from="1669968029510" duration="611000" />
+      <workItem from="1669997903093" duration="8000" />
+      <workItem from="1670145397000" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
